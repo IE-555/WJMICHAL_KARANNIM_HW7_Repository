@@ -383,18 +383,13 @@ sns.lineplot(data=grossavg)
 plt.title('Annual Box Office Gross Revenue',fontsize=15)
 plt.xlabel('Year of release',fontsize=15)
 plt.ylabel('Gross Revenue In Millions (USD)',fontsize=15)
+plt.savefig("Annual Box Office Gross Revenue")
+plt.show()
 ```
 
 
-
-
-    Text(0, 0.5, 'Gross Revenue In Millions (USD)')
-
-
-
-
     
-![png](output_10_1.png)
+![png](output_10_0.png)
     
 
 
@@ -408,18 +403,13 @@ plt.savefig('RevPerGenre.png')
 plt.title('Genre Vs Gross Box Office Revenue',fontsize=15)
 plt.xlabel('Gross Revenue In Millions (USD)',fontsize=15)
 plt.ylabel('Genre',fontsize=15)
+plt.savefig("Genre Vs Gross Box Office Revenue")
+plt.show()
 ```
 
 
-
-
-    Text(44.125, 0.5, 'Genre')
-
-
-
-
     
-![png](output_12_1.png)
+![png](output_12_0.png)
     
 
 
@@ -432,18 +422,13 @@ sns.kdeplot(data=data, x="year", hue="genre", multiple="stack")
 plt.title('Genre Density Plot',fontsize=15)
 plt.xlabel('Year',fontsize=15)
 plt.ylabel('Density',fontsize=15)
+plt.savefig("Genre Density Plot")
+plt.show()
 ```
 
 
-
-
-    Text(0, 0.5, 'Density')
-
-
-
-
     
-![png](output_14_1.png)
+![png](output_14_0.png)
     
 
 
@@ -456,14 +441,9 @@ sns.relplot(data=data, x="year", y="gross", hue="budget", kind="scatter",height=
 plt.title('Gross Vs Year Relationship Plot',fontsize=15)
 plt.xlabel('Year',fontsize=15)
 plt.ylabel('Gross Revenue In Billions (USD)',fontsize=15)
+plt.savefig("Gross Vs Year Relationship Plot")
+plt.show()
 ```
-
-
-
-
-    Text(26.25818185763889, 0.5, 'Gross Revenue In Billions (USD)')
-
-
 
 
     <Figure size 864x576 with 0 Axes>
@@ -471,7 +451,7 @@ plt.ylabel('Gross Revenue In Billions (USD)',fontsize=15)
 
 
     
-![png](output_16_2.png)
+![png](output_16_1.png)
     
 
 
@@ -485,18 +465,13 @@ plt.savefig('IMDBVotesPerYear.png')
 plt.title('Casted Votes Over The Period',fontsize=15)
 plt.xlabel('Year',fontsize=15)
 plt.ylabel('Votes',fontsize=15)
+plt.savefig("Casted Votes Over The Period")
+plt.show()
 ```
 
 
-
-
-    Text(57.75, 0.5, 'Votes')
-
-
-
-
     
-![png](output_18_1.png)
+![png](output_18_0.png)
     
 
 
@@ -515,16 +490,16 @@ pip install Kaggle
 ```
 
     Requirement already satisfied: Kaggle in c:\users\walsk\anaconda3\lib\site-packages (1.5.12)
-    Requirement already satisfied: urllib3 in c:\users\walsk\anaconda3\lib\site-packages (from Kaggle) (1.26.7)
-    Requirement already satisfied: requests in c:\users\walsk\anaconda3\lib\site-packages (from Kaggle) (2.26.0)
-    Requirement already satisfied: tqdm in c:\users\walsk\anaconda3\lib\site-packages (from Kaggle) (4.62.3)
-    Requirement already satisfied: python-dateutil in c:\users\walsk\anaconda3\lib\site-packages (from Kaggle) (2.8.2)
     Requirement already satisfied: certifi in c:\users\walsk\anaconda3\lib\site-packages (from Kaggle) (2021.10.8)
-    Requirement already satisfied: python-slugify in c:\users\walsk\anaconda3\lib\site-packages (from Kaggle) (5.0.2)
+    Requirement already satisfied: requests in c:\users\walsk\anaconda3\lib\site-packages (from Kaggle) (2.26.0)
+    Requirement already satisfied: urllib3 in c:\users\walsk\anaconda3\lib\site-packages (from Kaggle) (1.26.7)
     Requirement already satisfied: six>=1.10 in c:\users\walsk\anaconda3\lib\site-packages (from Kaggle) (1.16.0)
+    Requirement already satisfied: python-dateutil in c:\users\walsk\anaconda3\lib\site-packages (from Kaggle) (2.8.2)
+    Requirement already satisfied: python-slugify in c:\users\walsk\anaconda3\lib\site-packages (from Kaggle) (5.0.2)
+    Requirement already satisfied: tqdm in c:\users\walsk\anaconda3\lib\site-packages (from Kaggle) (4.62.3)
     Requirement already satisfied: text-unidecode>=1.3 in c:\users\walsk\anaconda3\lib\site-packages (from python-slugify->Kaggle) (1.3)
-    Requirement already satisfied: charset-normalizer~=2.0.0 in c:\users\walsk\anaconda3\lib\site-packages (from requests->Kaggle) (2.0.4)
     Requirement already satisfied: idna<4,>=2.5 in c:\users\walsk\anaconda3\lib\site-packages (from requests->Kaggle) (3.2)
+    Requirement already satisfied: charset-normalizer~=2.0.0 in c:\users\walsk\anaconda3\lib\site-packages (from requests->Kaggle) (2.0.4)
     Requirement already satisfied: colorama in c:\users\walsk\anaconda3\lib\site-packages (from tqdm->Kaggle) (0.4.4)
     Note: you may need to restart the kernel to use updated packages.
     
