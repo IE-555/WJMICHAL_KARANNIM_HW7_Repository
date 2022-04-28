@@ -383,8 +383,7 @@ sns.lineplot(data=grossavg)
 plt.title('Annual Box Office Gross Revenue',fontsize=15)
 plt.xlabel('Year of release',fontsize=15)
 plt.ylabel('Gross Revenue In Millions (USD)',fontsize=15)
-plt.savefig("Annual Box Office Gross Revenue")
-plt.show()
+![Plot 1](WJMICHAL_KARANNIM_movies/output_10_1.png)
 ```
 
 
@@ -403,8 +402,7 @@ plt.savefig('RevPerGenre.png')
 plt.title('Genre Vs Gross Box Office Revenue',fontsize=15)
 plt.xlabel('Gross Revenue In Millions (USD)',fontsize=15)
 plt.ylabel('Genre',fontsize=15)
-plt.savefig("Genre Vs Gross Box Office Revenue")
-plt.show()
+![Plot 2](WJMICHAL_KARANNIM_movies/output_12_1.png)
 ```
 
 
@@ -422,8 +420,7 @@ sns.kdeplot(data=data, x="year", hue="genre", multiple="stack")
 plt.title('Genre Density Plot',fontsize=15)
 plt.xlabel('Year',fontsize=15)
 plt.ylabel('Density',fontsize=15)
-plt.savefig("Genre Density Plot")
-plt.show()
+![Plot 3](WJMICHAL_KARANNIM_movies/output_14_1.png)
 ```
 
 
@@ -441,8 +438,7 @@ sns.relplot(data=data, x="year", y="gross", hue="budget", kind="scatter",height=
 plt.title('Gross Vs Year Relationship Plot',fontsize=15)
 plt.xlabel('Year',fontsize=15)
 plt.ylabel('Gross Revenue In Billions (USD)',fontsize=15)
-plt.savefig("Gross Vs Year Relationship Plot")
-plt.show()
+![Plot 4](WJMICHAL_KARANNIM_movies/output_16_2.png)
 ```
 
 
@@ -465,8 +461,7 @@ plt.savefig('IMDBVotesPerYear.png')
 plt.title('Casted Votes Over The Period',fontsize=15)
 plt.xlabel('Year',fontsize=15)
 plt.ylabel('Votes',fontsize=15)
-plt.savefig("Casted Votes Over The Period")
-plt.show()
+![Plot 5](WJMICHAL_KARANNIM_movies/output_18_1.png)
 ```
 
 
